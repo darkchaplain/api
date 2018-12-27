@@ -1,0 +1,20 @@
+list:
+  handler: src/handlers/list.handler
+  events:
+    - http: get /users
+get:
+  handler: src/handlers/get.handler
+  events:
+    - http: get /user/{login}
+add:
+  handler: src/handlers/add.handler
+  events:
+    - http: post /user
+update:
+  handler: src/handlers/update.handler
+  events:
+    - http: put /user/{login}
+delete:
+  handler: src/handlers/delete.handler
+  events:
+    - http: delete /user/{login}

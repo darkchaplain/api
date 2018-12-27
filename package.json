@@ -1,0 +1,24 @@
+{
+  "name": "users",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "seed": "node ./src/seed/runner.js",
+    "start": "sls offline start",
+    "test": "jest handlers/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.382.0",
+    "dotenv": "^6.2.0",
+    "jest": "^23.6.0",
+    "serverless-offline": "^3.31.3"
+  },
+  "dependencies": {
+    "atob": "^2.1.2",
+    "colors": "^1.3.3",
+    "md5": "^2.2.1",
+    "querystring": "^0.2.0"
+  }
+}

@@ -1,0 +1,12 @@
+service: contacts-api
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-west-2
+
+functions:
+  - '${file(src/handlers/users.serverless.yml)}'
+
+plugins:
+  - serverless-offline
